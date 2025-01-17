@@ -31,8 +31,16 @@
     <header
       class="d-flex justify-content-between align-items-center p-3 bg-light"
     >
-      <h1 class="text-primary">Interior Solutions</h1>
-      <a href="index.html" class="btn btn-outline-primary">🏠 Back</a>
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
     </header>
     <main class="container my-5">
       <section class="mb-5">
@@ -56,131 +64,24 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <!-- Gallery Section -->
       <section>
         <h3 class="text-center mb-4">Gallery</h3>
-        <div class="row g-4 gallery">
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/n8a9DCh.jpeg" alt="Project Image 1" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/wTwPfQ4.jpeg" alt="Project Image 2" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/2g0S65O.jpeg" alt="Project Image 3" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/Of90YNM.jpeg" alt="Project Image 4" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/IAfu0O5.jpeg" alt="Project Image 5" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/ny5fXYb.jpeg" alt="Project Image 6" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/Z77S8VB.jpeg" alt="Project Image 7" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/wPflNx9.jpeg" alt="Project Image 8" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/5scBrDf.jpeg" alt="Project Image 9" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/WLEWgVs.jpeg"
-              alt="Project Image 10"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/aiu3faG.jpeg"
-              alt="Project Image 11"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/OQ2mMFq.jpeg"
-              alt="Project Image 12"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/TuRo8qN.jpeg"
-              alt="Project Image 13"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/tRrgrAM.jpeg"
-              alt="Project Image 14"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/NJvWHMk.jpeg"
-              alt="Project Image 15"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/kDKOpnI.jpeg"
-              alt="Project Image 16"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/e1sUJUa.jpeg"
-              alt="Project Image 17"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/vDOGul3.jpeg"
-              alt="Project Image 18"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/f5u9ctb.jpeg"
-              alt="Project Image 19"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/wo0MhU8.jpeg"
-              alt="Project Image 20"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/gN4U6yI.jpeg"
-              alt="Project Image 21"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/6hUm56f.jpeg"
-              alt="Project Image 22"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/vXNZ9zr.jpeg"
-              alt="Project Image 23"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/G47vwNd.jpeg"
-              alt="Project Image 24"
-            />
-          </div>
-        </div>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
       </section>
     </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
     <footer class="text-center py-4 bg-light">
       <p>📞 Contact Us:</p>
       <p>
@@ -189,5 +90,35 @@
       <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
       <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
     </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/n8a9DCh.jpeg",
+        "https://i.imgur.com/wTwPfQ4.jpeg",
+        "https://i.imgur.com/2g0S65O.jpeg",
+        "https://i.imgur.com/Of90YNM.jpeg",
+        "https://i.imgur.com/IAfu0O5.jpeg",
+        "https://i.imgur.com/ny5fXYb.jpeg",
+        "https://i.imgur.com/Z77S8VB.jpeg",
+        "https://i.imgur.com/wPflNx9.jpeg",
+        "https://i.imgur.com/5scBrDf.jpeg",
+        "https://i.imgur.com/WLEWgVs.jpeg",
+        "https://i.imgur.com/aiu3faG.jpeg",
+        "https://i.imgur.com/OQ2mMFq.jpeg",
+        "https://i.imgur.com/TuRo8qN.jpeg",
+        "https://i.imgur.com/tRrgrAM.jpeg",
+        "https://i.imgur.com/NJvWHMk.jpeg",
+        "https://i.imgur.com/kDKOpnI.jpeg",
+        "https://i.imgur.com/e1sUJUa.jpeg",
+        "https://i.imgur.com/vDOGul3.jpeg",
+        "https://i.imgur.com/f5u9ctb.jpeg",
+        "https://i.imgur.com/wo0MhU8.jpeg",
+        "https://i.imgur.com/gN4U6yI.jpeg",
+        "https://i.imgur.com/6hUm56f.jpeg",
+        "https://i.imgur.com/vXNZ9zr.jpeg",
+        "https://i.imgur.com/G47vwNd.jpeg",
+      ];
+    </script>
+    <script src="gallery.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 6 - Interior Solutions</title>
+    <title>Project 8 - Interior Solutions</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,29 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .gallery img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-      }
-
-      .gallery img:hover {
-        transform: scale(1.05);
-      }
-    </style>
   </head>
   <body>
     <header
       class="d-flex justify-content-between align-items-center p-3 bg-light"
     >
-      <h1 class="text-primary">Interior Solutions</h1>
-      <a href="index.html" class="btn btn-outline-primary">🏠 Back</a>
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
     </header>
     <main class="container my-5">
       <section class="mb-5">
-        <h2 class="text-center">💃 Two bedroom Apartment 💃</h2>
+        <h2 class="text-center">💃 Two Bedroom Apartment 💃</h2>
         <div class="row mt-4">
           <div class="col-md-6">
             <p><strong>🏠📍 Address:</strong> Abe Milton Pkwy House</p>
@@ -57,83 +53,24 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <!-- Gallery Section -->
       <section>
-        <h3 class="text-center mb-4">Gallery</h3>
-        <div class="row g-4 gallery">
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/v6pX0yD.jpeg" alt="Project Image 1" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/EJpoaVC.jpeg" alt="Project Image 2" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/TsbLGa7.jpeg" alt="Project Image 3" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/p50axJa.jpeg" alt="Project Image 4" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/yX85Rmp.jpeg" alt="Project Image 5" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/T2Gvihf.jpeg" alt="Project Image 6" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/I7J956Q.jpeg" alt="Project Image 7" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/70zk84k.jpeg" alt="Project Image 8" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/gJPuXdW.jpeg" alt="Project Image 9" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/S71dx6m.jpeg"
-              alt="Project Image 10"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/ybLvFwa.jpeg"
-              alt="Project Image 11"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/JwiVxTU.jpeg"
-              alt="Project Image 12"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/3Rbonp4.jpeg"
-              alt="Project Image 13"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/mKM58B8.jpeg"
-              alt="Project Image 14"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/TI7LVWn.jpeg"
-              alt="Project Image 15"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/8lBfqtZ.jpeg"
-              alt="Project Image 16"
-            />
-          </div>
-        </div>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
       </section>
     </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
     <footer class="text-center py-4 bg-light">
       <p>📞 Contact Us:</p>
       <p>
@@ -142,5 +79,27 @@
       <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
       <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
     </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/v6pX0yD.jpeg",
+        "https://i.imgur.com/EJpoaVC.jpeg",
+        "https://i.imgur.com/TsbLGa7.jpeg",
+        "https://i.imgur.com/p50axJa.jpeg",
+        "https://i.imgur.com/yX85Rmp.jpeg",
+        "https://i.imgur.com/T2Gvihf.jpeg",
+        "https://i.imgur.com/I7J956Q.jpeg",
+        "https://i.imgur.com/70zk84k.jpeg",
+        "https://i.imgur.com/gJPuXdW.jpeg",
+        "https://i.imgur.com/S71dx6m.jpeg",
+        "https://i.imgur.com/ybLvFwa.jpeg",
+        "https://i.imgur.com/JwiVxTU.jpeg",
+        "https://i.imgur.com/3Rbonp4.jpeg",
+        "https://i.imgur.com/mKM58B8.jpeg",
+        "https://i.imgur.com/TI7LVWn.jpeg",
+        "https://i.imgur.com/8lBfqtZ.jpeg",
+      ];
+    </script>
+    <script src="gallery.js"></script>
   </body>
 </html>

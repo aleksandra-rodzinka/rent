@@ -31,9 +31,18 @@
     <header
       class="d-flex justify-content-between align-items-center p-3 bg-light"
     >
-      <h1 class="text-primary">Interior Solutions</h1>
-      <a href="index.html" class="btn btn-outline-primary">🏠 Back</a>
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
     </header>
+
     <main class="container my-5">
       <section class="mb-5">
         <h2 class="text-center">🐒 Modern Two Bedroom Apartment 🐒</h2>
@@ -55,77 +64,24 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <!-- Gallery Section -->
       <section>
-        <h3 class="text-center mb-4">Gallery</h3>
-        <div class="row g-4 gallery">
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/JxLfSAt.jpeg" alt="Project Image 1" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/QsSuPct.jpeg" alt="Project Image 2" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/xWEVkXu.jpeg" alt="Project Image 3" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/vlopSee.jpeg" alt="Project Image 4" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/CwP5hHR.jpeg" alt="Project Image 5" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/PlR2tDT.jpeg" alt="Project Image 6" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/QOw57lp.jpeg" alt="Project Image 7" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/d8ncGv1.jpeg" alt="Project Image 8" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img src="https://i.imgur.com/YiNgih8.jpeg" alt="Project Image 9" />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/lqscr4i.jpeg"
-              alt="Project Image 10"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/nAXZSWb.jpeg"
-              alt="Project Image 11"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/j6okqRp.jpeg"
-              alt="Project Image 12"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/hjvCTIu.jpeg"
-              alt="Project Image 13"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/5Re9Wq6.jpeg"
-              alt="Project Image 14"
-            />
-          </div>
-          <div class="col-12 col-md-4">
-            <img
-              src="https://i.imgur.com/99xl6by.jpeg"
-              alt="Project Image 15"
-            />
-          </div>
-        </div>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
       </section>
     </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
     <footer class="text-center py-4 bg-light">
       <p>📞 Contact Us:</p>
       <p>
@@ -134,5 +90,26 @@
       <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
       <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
     </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/JxLfSAt.jpeg",
+        "https://i.imgur.com/QsSuPct.jpeg",
+        "https://i.imgur.com/xWEVkXu.jpeg",
+        "https://i.imgur.com/vlopSee.jpeg",
+        "https://i.imgur.com/CwP5hHR.jpeg",
+        "https://i.imgur.com/PlR2tDT.jpeg",
+        "https://i.imgur.com/QOw57lp.jpeg",
+        "https://i.imgur.com/d8ncGv1.jpeg",
+        "https://i.imgur.com/YiNgih8.jpeg",
+        "https://i.imgur.com/lqscr4i.jpeg",
+        "https://i.imgur.com/nAXZSWb.jpeg",
+        "https://i.imgur.com/j6okqRp.jpeg",
+        "https://i.imgur.com/hjvCTIu.jpeg",
+        "https://i.imgur.com/5Re9Wq6.jpeg",
+        "https://i.imgur.com/99xl6by.jpeg",
+      ];
+    </script>
+    <script src="gallery.js"></script>
   </body>
 </html>
