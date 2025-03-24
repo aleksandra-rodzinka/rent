@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🎀 Two Bedroom Apartment 🎀</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> San Andreas Ave</p>
+            <p><strong>🏷️💵 Price:</strong> $450.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 1 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya, Lina</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <strong>Description:</strong>
+              🌿✨ Bright and airy two-bedroom apartment designed in light
+              tones! The master bedroom 🛏️ features its own stylish blue
+              bathroom with a shower 🚿, while the second bedroom 🎀 is a dreamy
+              pink space for a teenage girl—complete with a computer 💻, makeup
+              desk 💄, and plenty of storage for clothes 👗. The open-plan
+              kitchen 🍽️ seamlessly connects to a cozy living room 🛋️ with big
+              windows 🌞, filling the space with natural light. A second
+              bathroom 🛁 with a relaxing bathtub adds extra comfort to this
+              charming home! 🏡💙💕
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/xQR7zWR.jpeg",
+        "https://i.imgur.com/dmyTkYv.jpeg",
+        "https://i.imgur.com/xcUVVzh.jpeg",
+        "https://i.imgur.com/g6j5xSu.jpeg",
+        "https://i.imgur.com/YUtTfUa.jpeg",
+        "https://i.imgur.com/M2KP6Ru.jpeg",
+        "https://i.imgur.com/ox0MjES.jpeg",
+        "https://i.imgur.com/LyBN2c9.jpeg",
+        "https://i.imgur.com/rQJxGr0.jpeg",
+        "https://i.imgur.com/xog7BI7.jpeg",
+        "https://i.imgur.com/Vaxl0WF.jpeg",
+        "https://i.imgur.com/hPHd2q2.jpeg",
+        "https://i.imgur.com/L6BKMyQ.jpeg",
+        "https://i.imgur.com/a0sKP2a.jpeg",
+        "https://i.imgur.com/iXy4PE4.jpeg",
+        "https://i.imgur.com/ZgaGAl8.jpeg",
+        "https://i.imgur.com/l9QLMQq.jpeg",
+        "https://i.imgur.com/3BW1Ccf.jpeg",
+        "https://i.imgur.com/6JtfiEg.jpeg",
+      ];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
