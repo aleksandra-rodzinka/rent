@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🌵 Small House in Sandy 🌵</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Cholla Springs Avenue</p>
+            <p><strong>🏷️💵 Price:</strong> $150.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 4 Hours</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <strong>Description:</strong>
+              A cozy yet stylish small house designed for a man who loves a
+              moody, modern vibe. Featuring an open-floor kitchen 🍳, a
+              comfortable living room 🛋️, and a bedroom 🛏️ with dimmed lights 💡
+              and dark walls 🎭 for a sleek touch. A dedicated storage room 📦
+              keeps things organized, while the bathroom 🚿 comes with a walk-in
+              shower for a practical yet refined finish. A perfect hideaway in
+              the heart of the desert! 🌵🔥
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/F5r3f9Z.jpeg",
+        "https://i.imgur.com/dxbcjzt.jpeg",
+        "https://i.imgur.com/VMcucjp.jpeg",
+        "https://i.imgur.com/21O1cXd.jpeg",
+        "https://i.imgur.com/RlsNJ7i.jpeg",
+        "https://i.imgur.com/CUEgynh.jpeg",
+        "https://i.imgur.com/TI1aS16.jpeg",
+        "https://i.imgur.com/2S5WXj5.jpeg",
+        "https://i.imgur.com/WBN7eQY.jpeg",
+        "https://i.imgur.com/IOQlQ78.jpeg",
+      ];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
