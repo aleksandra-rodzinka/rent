@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🐼 One Bed 🐼</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Wisdahl Complex</p>
+            <p><strong>🏷️💵 Price:</strong> $230.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 2 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <strong>Description:</strong>
+              This one-bedroom apartment is a modern masterpiece with a sleek black and white palette 🖤🤍 and a vibe that says "Netflix but make it fancy." The open-plan kitchen 🍽️ flows into a stylish dining area, and the living room boasts a huge cinema screen 🎥🍿 with a cozy snack corner for all your late-night cravings.
+
+              The bathroom is a luxe combo 🚿🛁 with both a shower and tub, and of course a modern toilet 🚽 tucked in neatly. The project focused on repainting the walls 🎨🖌️, adding just the right furniture 🛋️🪑, and constructing a few small walls and doors 🚪 to make the space more functional while keeping it open and airy.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+"https://i.imgur.com/1So7mEi.jpeg",
+  "https://i.imgur.com/hhlJjPM.jpeg",
+  "https://i.imgur.com/CbvxMuk.jpeg",
+  "https://i.imgur.com/YaAEnL2.jpeg",
+  "https://i.imgur.com/pS8fFMd.jpeg",
+  "https://i.imgur.com/K3UUrRS.jpeg",
+  "https://i.imgur.com/1MOWMAV.jpeg",
+  "https://i.imgur.com/dMUeQt1.jpeg",
+  "https://i.imgur.com/XzPduvA.jpeg"
+      ];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
