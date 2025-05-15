@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🏖️ Pastel Beach Apartment 🏖️</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Playa Vista</p>
+            <p><strong>🏷️💵 Price:</strong> $350.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 4 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <strong>Description:</strong>
+              🏖️ This beach-style apartment is a pastel paradise! The open-space living room and kitchen 🛋️🍳 are bathed in soft pastel colors 🎨, creating a calming and inviting atmosphere. Modern LED lights 💡 behind the TV add a sleek and stylish touch.
+
+              The apartment features a nice entrance 🚪 and corridors that elegantly connect the rooms. The bedroom 🛏️ offers a unique view of the cemetery 🪦🌳—perfect for those who enjoy "peaceful" neighbors! The attached bathroom 🚿🛁 also shares this serene view, making it a truly "restful" experience.
+            
+              The living room opens up to a pretty balcony 🌅, perfect for enjoying the fresh air and sunsets. There's a utility closet 🧺🚽 with a laundry area and a guest sink for added convenience.
+            
+              For visitors, the office 🖥️ includes an extra bed 🛏️, ensuring everyone feels at home.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+const images = [
+  "https://i.imgur.com/ZzO1w2L.jpeg",
+  "https://i.imgur.com/CkPTXWs.jpeg",
+  "https://i.imgur.com/4U7X2jf.jpeg",
+  "https://i.imgur.com/6Rdg97C.jpeg",
+  "https://i.imgur.com/gry7HJw.jpeg",
+  "https://i.imgur.com/JbrEQWA.jpeg",
+  "https://i.imgur.com/T9lTVwe.jpeg",
+  "https://i.imgur.com/f50VWMK.jpeg",
+  "https://i.imgur.com/nixf5Uh.jpeg",
+  "https://i.imgur.com/aUj7VTg.jpeg",
+  "https://i.imgur.com/DfiQQim.jpeg",
+  "https://i.imgur.com/UmlILNz.jpeg",
+  "https://i.imgur.com/V5eUDM3.jpeg",
+  "https://i.imgur.com/fsp9FkV.jpeg",
+  "https://i.imgur.com/62synYd.jpeg",
+  "https://i.imgur.com/WPVSusZ.jpeg",
+  "https://i.imgur.com/uFoSlrt.jpeg",
+  "https://i.imgur.com/tz18j9o.jpeg",
+  "https://i.imgur.com/fEht6p1.jpeg",
+];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
