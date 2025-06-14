@@ -1,10 +1,23 @@
 /* General Styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-footer-bg: #f8f9fa;
+  --card-bg-color: #ffffff;
+  --card-text-color: #000000;
+  --border-color: #dddddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #a3c7e6, #e8a3ea);
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Header Styles */
@@ -15,6 +28,8 @@ header {
   top: 0;
   z-index: 1000;
   padding: 0.8rem;
+  background-color: var(--header-footer-bg);
+  transition: background-color 0.3s;
 }
 
 /* Remove underlining from links */
@@ -32,6 +47,11 @@ a {
   background-color: #ffffff;
   border-radius: 10px;
   text-decoration: none;
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .card img {
@@ -63,6 +83,8 @@ footer {
   color: #6c757d;
   border-top: 2px solid #e9ecef;
   padding: 1rem;
+  background-color: var(--header-footer-bg);
+  transition: background-color 0.3s;
 }
 
 .gallery img {
