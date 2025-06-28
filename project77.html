@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🏡 Three Floors of Home 🏡</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong>Vespucci Beach</p>
+            <p><strong>🏷️💵 Price:</strong> $2.000.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> let's not talk about it</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya, Ralph</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+                Our biggest project so far and we’re thrilled with the result! 🛠️🏡 This beautiful three-floor home blends modern comfort with cozy rustic vibes 🌾🪵. On the ground floor: an office, bathroom, storage, entrance, and a laundry area—everything right where it should be 🧺💼🚪. The first floor brings the heart of the home to life with a warm kitchen 🍳, pantry, another office, and a bright living room with plenty of sunlight and a big TV 📺☀️. Up top? Pure luxury—a pool, a small home cinema 🎬, and a bedroom with its own bath, wardrobe, and two balconies overlooking it all 🛏️🛁🌅. A long journey, but absolutely worth it! 💛🔨✨
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+        const images = [
+          "https://i.imgur.com/dtMVd5R.jpeg",
+          "https://i.imgur.com/yovqL8M.jpeg",
+          "https://i.imgur.com/VAVi16U.jpeg",
+          "https://i.imgur.com/OJnV8xv.jpeg",
+          "https://i.imgur.com/0E5Fv3N.jpeg",
+          "https://i.imgur.com/xwshXJV.jpeg",
+          "https://i.imgur.com/ljvXLTn.jpeg",
+          "https://i.imgur.com/YABT47e.jpeg",
+          "https://i.imgur.com/IzDdpUD.jpeg",
+          "https://i.imgur.com/tCkn9U4.jpeg",
+          "https://i.imgur.com/FntnDOj.jpeg",
+          "https://i.imgur.com/wJ81MmZ.jpeg",
+          "https://i.imgur.com/QK9EqF7.jpeg",
+          "https://i.imgur.com/KnPMyQO.jpeg",
+          "https://i.imgur.com/su5fXuA.jpeg",
+          "https://i.imgur.com/cQQjqEy.jpeg",
+          "https://i.imgur.com/QEhipP8.jpeg",
+          "https://i.imgur.com/AEi0lMr.jpeg",
+          "https://i.imgur.com/dGNBEOq.jpeg",
+          "https://i.imgur.com/Yay83Iz.jpeg",
+          "https://i.imgur.com/uQ5w94E.jpeg",
+          "https://i.imgur.com/OXjwyh2.jpeg",
+          "https://i.imgur.com/cEo20v7.jpeg",
+          "https://i.imgur.com/F077uGl.jpeg",
+          "https://i.imgur.com/LC0rj8U.jpeg",
+          "https://i.imgur.com/TWqFqD8.jpeg",
+          "https://i.imgur.com/mv8DTfr.jpeg",
+          "https://i.imgur.com/PvK46Jz.jpeg",
+          "https://i.imgur.com/tBDdXjp.jpeg",
+          "https://i.imgur.com/StpnUGK.jpeg",
+          "https://i.imgur.com/cC5jCOX.jpeg",
+        ];
+            </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
