@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🦉 High-End Tinsel Tower Apartment 🦉</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong>   Tinsel Tower </p>
+            <p><strong>🏷️💵 Price:</strong> $1,390,000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 3 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+                🦁 High-End Tinsel Tower Apartment 🌟 A modern luxury gem with 2 spacious bedrooms 🛏️🌆—one featuring its own walk-in closet 👗👔 and private bathroom 🛁. Includes a separate office 💻, laundry room 🧺, and an entertainment zone with private cinema 🎥🍿 and billiards 🎱. There’s also a stylish party room 🎉🍸 with bar, plus an open-plan kitchen, dining, and living area 🍽️🥂🛋️ that flow seamlessly together. A cozy fireplace corner 🔥📚 adds warmth and charm, while panoramic views 🌇✨ complete this high-end city retreat.
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/ibatrIU.jpeg",
+        "https://i.imgur.com/iAJZB49.jpeg",
+        "https://i.imgur.com/TzBnpot.jpeg",
+        "https://i.imgur.com/dHo096E.jpeg",
+        "https://i.imgur.com/XhTGejp.jpeg",
+        "https://i.imgur.com/Sif3o0C.jpeg",
+        "https://i.imgur.com/pNLTV8g.jpeg",
+        "https://i.imgur.com/E0h7Dlx.jpeg",
+        "https://i.imgur.com/MHTzZ0A.jpeg",
+        "https://i.imgur.com/ntLTrTA.jpeg",
+        "https://i.imgur.com/6CsvA8d.jpeg",
+        "https://i.imgur.com/7K4KKHm.jpeg",
+        "https://i.imgur.com/hKXAdiK.jpeg",
+        "https://i.imgur.com/K56dKak.jpeg",
+        "https://i.imgur.com/FycqnYk.jpeg",
+        "https://i.imgur.com/5lzQXMD.jpeg",
+        "https://i.imgur.com/Rc9EZob.jpeg",
+        "https://i.imgur.com/D6MQOIe.jpeg",
+        "https://i.imgur.com/gcO7o7a.jpeg",
+        "https://i.imgur.com/FYcl74B.jpeg",
+        "https://i.imgur.com/2VKFdm1.jpeg",
+        "https://i.imgur.com/XcDtHKt.jpeg",
+        "https://i.imgur.com/axMRe1V.jpeg",
+        "https://i.imgur.com/nqHodIx.jpeg",
+        "https://i.imgur.com/WI5zkjx.jpeg",
+        "https://i.imgur.com/ftXUSnm.jpeg"
+      ];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
+    <script src="gallery.js"></script>
+  </body>
+</html>
