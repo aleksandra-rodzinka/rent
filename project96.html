@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🐈‍⬛ Modern Apartment 🐈‍⬛</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> MHC Apartments</p>
+            <p><strong>🏷️💵 Price:</strong> $1.200.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 3 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya, Dean</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+         🖤 Modern luxury awaits! This 2-bedroom unit 🛏️ features dramatic dark accents and rich colors. 🎨 The master suite is the showstopper, boasting a deep bathtub view 🛁 directly over the bustling Alta Street urban skyline! 🏙️ It includes a walk-in closet. 👗 An open concept connects the kitchen 🧑‍🍳, dining 🍽️, and TV room. 📺 Enjoy pool views 🏊 from the main area and benefit from a dedicated office space for two 💻 in this highly safe area. 🛡️ Guest bedroom and spare bath are easily accessed from the hall.🚪
+        </div>
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+const images = [
+  "https://i.imgur.com/QIl6FMB.jpeg",
+  "https://i.imgur.com/1SynS99.jpeg",
+  "https://i.imgur.com/okjvcyU.jpeg",
+  "https://i.imgur.com/3rFSUQa.jpeg",
+  "https://i.imgur.com/8OEgTdg.jpeg",
+  "https://i.imgur.com/xXUrqjm.jpeg",
+  "https://i.imgur.com/shzMCuO.jpeg",
+  "https://i.imgur.com/Gt1DlzS.jpeg",
+  "https://i.imgur.com/2YNgkJu.jpeg",
+  "https://i.imgur.com/BIXRdfY.jpeg",
+  "https://i.imgur.com/XlvoQr2.jpeg",
+  "https://i.imgur.com/JftNuRJ.jpeg"
+];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
+</html>
+    <script src="gallery.js"></script>
+  </body>
+</html>
