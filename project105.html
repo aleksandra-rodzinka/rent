@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🥪 Deli Project 🥪</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Morningwood</p>
+            <p><strong>🏷️💵 Price:</strong> $545.000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 2 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+     This project was all about designing a deli for a sandwich shop meant for busy mornings ☀️🥖. We focused on keeping the front modern and sleek ✨, with plenty of seating so guests can sit and enjoy together 🪑🤍. The layout also includes a backroom toilet 🚻, a staircase leading down to the garage 🚗, and access to the top floor where the office and employee room are located 🏢👥 — practical, clean, and perfect for a fast-paced morning vibe ⚡🥪.
+      </section>
+      <hr />
+      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+        "https://i.imgur.com/mHZk9WY.jpeg",
+        "https://i.imgur.com/AcoJ6HB.jpeg",
+        "https://i.imgur.com/1r75uMi.jpeg",
+        "https://i.imgur.com/1IlZQqs.jpeg",
+        "https://i.imgur.com/hJGPvuL.jpeg",
+        "https://i.imgur.com/aU5hvDw.jpeg",
+        "https://i.imgur.com/w028jmz.jpeg",
+        "https://i.imgur.com/0NHAKAY.jpeg",
+        "https://i.imgur.com/XkhYsSB.jpeg",
+        "https://i.imgur.com/pPMC47w.jpeg",
+        "https://i.imgur.com/cAlOSk7.jpeg",
+        "https://i.imgur.com/ufOYdpQ.jpeg",
+        "https://i.imgur.com/wYxz6xm.jpeg",
+        "https://i.imgur.com/D0hYMN8.jpeg",
+        "https://i.imgur.com/jT7foK9.jpeg",
+        "https://i.imgur.com/F75FPe0.jpeg"
+      ];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
