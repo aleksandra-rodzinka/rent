@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🐆 Two Bedroom Penthouse Apartment 🐆</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> JR Pierre</p>
+            <p><strong>🏷️💵 Price:</strong> $1.355 .000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 7 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+     A bright top-floor penthouse designed with modern style and warm wooden elements 🌇🪵✨. Huge panoramic windows bring in tons of natural light and offer beautiful city views 🌞🏙️. The apartment features a spacious open layout combining the living room, dining area, kitchen, and a stylish open office space 🛋️🍽️🍳💻. The guest bedroom includes a large wardrobe, desk, and fun accent lighting 🛏️💡📚, while the master suite is a true retreat with a spa-style bathroom featuring a bathtub with views, walk-in shower, toilet, and private sauna 🛁🚿🔥. Connected to the bedroom is a walk-in closet leading to a private gym 👟🏋️‍♂️, plus a separate utility room with extra storage for everyday convenience 🧺📦. A perfect mix of luxury, comfort, and modern living high above the city 💎🔑. </p>
+          </div>
+        </div>
+      </section>
+      <hr />      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+"https://i.imgur.com/eb4lw7V.jpeg",
+"https://i.imgur.com/Dc0CfqR.jpeg",
+"https://i.imgur.com/HXEGyX7.jpeg",
+"https://i.imgur.com/yspkiV3.jpeg",
+"https://i.imgur.com/BEZ8qhP.jpeg",
+"https://i.imgur.com/8XGSmky.jpeg",
+"https://i.imgur.com/04SH8cs.jpeg",
+"https://i.imgur.com/oo5fAnr.jpeg",
+"https://i.imgur.com/uqtFC7g.jpeg",
+"https://i.imgur.com/VsmvPVF.jpeg",
+"https://i.imgur.com/Rz2VlNB.jpeg",
+"https://i.imgur.com/MLYKij5.jpeg",
+"https://i.imgur.com/8i002eA.jpeg",
+"https://i.imgur.com/8mkDtNZ.jpeg",
+"https://i.imgur.com/KyZv8ZS.jpeg",
+"https://i.imgur.com/E2bS12S.jpeg",
+"https://i.imgur.com/mf2IHcd.jpeg",
+"https://i.imgur.com/bMEHJqs.jpeg",
+"https://i.imgur.com/2i0DYty.jpeg",
+"https://i.imgur.com/UzFizop.jpeg",
+"https://i.imgur.com/4sYsY3r.jpeg",
+"https://i.imgur.com/rx29PZc.jpeg",
+"https://i.imgur.com/yBscZaQ.jpeg",
+"https://i.imgur.com/1uU0qhe.jpeg",
+"https://i.imgur.com/ZLnmb46.jpeg",
+"https://i.imgur.com/l5XFoZ7.jpeg",
+"https://i.imgur.com/ALiPK4Q.jpeg",
+"https://i.imgur.com/mLGSwT5.jpeg",
+"https://i.imgur.com/m9ZViVI.jpeg",
+"https://i.imgur.com/7fa9tet.jpeg",
+"https://i.imgur.com/pw8K4Ge.jpeg",
+"https://i.imgur.com/tn5OmKF.jpeg",
+"https://i.imgur.com/mBuACyW.jpeg"
+];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
