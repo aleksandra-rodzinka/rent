@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        <a href="rent.html" class="btn btn-outline-success ms-2">💸 Rent!</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🐍 Two Bedroom Apartment 🐍</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Wisdahl Complex</p>
+            <p><strong>🏷️💵 Price:</strong> $350 .000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 1 Day</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+A sleek modern apartment filled with natural light thanks to its large windows with stylish blinds 🌞🪟✨. The space keeps a clean and cozy feel, perfect for everyday living 🛋️🏡. One bedroom is designed for productivity, featuring a comfortable desk setup and practical storage 💻📚📦, while the second bedroom offers a more relaxed vibe with a large wardrobe, cozy sofa, and elegant mirror 🛏️🪞🧥. The bathroom stands out with its warm tones and inviting atmosphere, complete with a bathtub for ultimate relaxation 🛁🤎🔥. A simple yet stylish home that blends comfort with modern design 💎🔑. </p>
+          </div>
+        </div>
+      </section>
+      <hr />      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+"https://i.imgur.com/FtX1vcr.jpeg",
+"https://i.imgur.com/02zrjkV.jpeg",
+"https://i.imgur.com/gcXaV6z.jpeg",
+"https://i.imgur.com/6gFadNr.jpeg",
+"https://i.imgur.com/DhrOOK1.jpeg",
+"https://i.imgur.com/EPNkpFz.jpeg",
+"https://i.imgur.com/tyBzDki.jpeg",
+"https://i.imgur.com/i5W9cQd.jpeg",
+"https://i.imgur.com/QhPvDG4.jpeg"
+];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
