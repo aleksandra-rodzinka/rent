@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Interior Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-light"
+    >
+      <a href="index.html"
+        ><h1 class="text-primary">🦝 Interior Solutions 🦝</h1></a
+      >
+      <div>
+        <a href="index.html" class="btn btn-outline-primary">🏠 Home</a>
+        <a href="about.html" class="btn btn-outline-warning ms-2"
+          >👥 About Us</a
+        >
+        
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center">🦅 Global Estate Headquarters 🦅</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <p><strong>🏠📍 Address:</strong> Parker Elite Estates</p>
+            <p><strong>🏷️💵 Price:</strong> $1.500 .000</p>
+            <p><strong>🗓️🕑 Duration:</strong> 5 Days</p>
+            <p><strong>🛠️🏗️ Team:</strong> Maya</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+                <strong>Description:</strong>
+A professional multi-level real estate headquarters featuring a ground-floor reception, meeting room, cafeteria, and a communal workspace with computer desks 🏢☕💻. The layout includes two separate staircases leading to the upper level, which houses the private office of founder Arthur Parker alongside private rooms for one-on-one client consultations 💼🤝. The facility also contains a dedicated presentation room, upstairs restrooms, and a large window ceiling for an abundance of natural light 🏗️🌤️✨. </p>
+          </div>
+        </div>
+      </section>
+      <hr />      <!-- Gallery Section with Instruction -->
+
+      <section>
+        <h3 class="text-center mb-4">📷 Gallery 📷</h3>
+        <p class="text-center mb-4">
+          Click on any image below to view it in full size!
+        </p>
+        <div class="row g-4 gallery"></div>
+      </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <button id="closeModal" class="modal-btn">✖</button>
+      <button id="prevImage" class="modal-btn">◀</button>
+      <button id="nextImage" class="modal-btn">▶</button>
+      <img id="modalImage" alt="Full-size view" />
+    </div>
+
+    <footer class="text-center py-4 bg-light">
+      <p>📞 Contact Us:</p>
+      <p>👑 Maya Shevchenko: 2066</p>
+      <p>📍 Address: Badger Tower, Floor 1, Room 3</p>
+      <p>💸 "Interior Solutions: Exceeding dreams, exceeding budgets!" 💸</p>
+    </footer>
+
+    <script>
+      const images = [
+"https://i.imgur.com/XwIl1Fu.jpeg",
+"https://i.imgur.com/ZMkcjqz.jpeg",
+"https://i.imgur.com/AYhU0Qm.jpeg",
+"https://i.imgur.com/uHp5wRG.jpeg",
+"https://i.imgur.com/lw2AFi5.jpeg",
+"https://i.imgur.com/Nzv1A49.jpeg",
+"https://i.imgur.com/9XL18yw.jpeg",
+"https://i.imgur.com/QiYsLee.jpeg",
+"https://i.imgur.com/EJTfIrl.jpeg",
+"https://i.imgur.com/lpVms4d.jpeg",
+"https://i.imgur.com/MfM596w.jpeg",
+"https://i.imgur.com/MEEnoUF.jpeg",
+"https://i.imgur.com/AuqRO5d.jpeg",
+"https://i.imgur.com/eEGzmcT.jpeg",
+"https://i.imgur.com/BS2X9nE.jpeg",
+"https://i.imgur.com/KZQBz8U.jpeg",
+"https://i.imgur.com/YLmlwP0.jpeg",
+"https://i.imgur.com/JjQCXob.jpeg",
+"https://i.imgur.com/sQTvFbZ.jpeg",
+"https://i.imgur.com/X2Trpjp.jpeg",
+"https://i.imgur.com/GxsNcWb.jpeg"
+];
+    </script>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
